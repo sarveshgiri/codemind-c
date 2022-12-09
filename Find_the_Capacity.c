@@ -1,8 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int s,t,b,c;
-    scanf("%d%d%d",&s,&t,&b);
-    c=s*t*b;
-    printf("%dKB",c);
+    int i,p=1;
+    int a[3];
+    for(i=0;i<3;i++)
+    {
+        scanf("%d",&a[i]);
+        p=p*a[i];
+    }
+    printf("%dKB",p);
 }
