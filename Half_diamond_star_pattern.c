@@ -1,31 +1,28 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,j;
+    int n,i,j,k,l;
     scanf("%d",&n);
-    if(n<3)
+    if(n>=3&&n<=n)
     {
-        printf("The pattern is not possible");
-    }
-    else
-    {
-    for(i=1;i<=n;i++)
-    {
-        for(j=1;j<=i;j++)
+        for(i=1;i<=n;i++)
         {
-        printf("*");
-        }
-        printf("
+            for(j=1;j<=i;j++)
+            {
+                printf("*");
+            }
+            printf("
 ");
-    }
-    for(i=n-1;i>=1;i--)
-    {
-        for(j=i;j>=1;j--)
+        }
+        for(k=n-1;k>=1;k--)
         {
-            printf("*");
-        }
-        printf("
+            for(l=1;l<=k;l++)
+            {
+                printf("*");
+            }
+            printf("
 ");
+        }
     }
-    }
+    else printf("The pattern is not possible");
 }
