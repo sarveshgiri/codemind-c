@@ -2,22 +2,22 @@
 #include<math.h>
 int main()
 {
-    int n,p,t=0,g,r,s,h=0;
+    int n,q,r,s=0,p,t,d=0;
     scanf("%d",&n);
-    s=pow(n,2);
+    q=pow(n,2);
     while(n!=0)
     {
-        p=n%10;
-        t=t*10+p;
+        r=n%10;
+        s=s*10+r;
         n=n/10;
     }
-    g=pow(t,2);
-    while(g!=0)
+    p=pow(s,2);
+    while(p!=0)
     {
-        r=g%10;
-        h=h*10+r;
-        g=g/10;
+        t=p%10;
+        d=d*10+t;
+        p=p/10;
     }
-    if(s==h) printf("True");
+    if(q==d) printf("True");
     else printf("False");
 }
