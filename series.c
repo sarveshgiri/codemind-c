@@ -2,21 +2,21 @@
 #include<math.h>
 int main()
 {
-    int n,i,a,b,k1=0,k2=0;
+    int n,i,k1=1,k2=1,a,b;
     scanf("%d",&n);
-    printf("0 ");
-    for(i=1;i<=n-1;i++)
+    for(i=1;i<=n+1;i++)
     {
-        if(i%2==0)
+        if(i%2!=0)
         {
-            a=pow(2,k1);
+            a=pow(2,k1)-1;
             printf("%d ",a);
             k1++;
         }
-        else
+        else 
         {
-            b=pow(3,k2);
-            printf("%d ",b);
+           
+            b=pow(3,k2)-1; 
+             printf("%d ",b);
             k2++;
         }
     }
