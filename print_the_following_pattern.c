@@ -7,7 +7,11 @@ int main()
     {
         for(j=1;j<=i;j++)
         {
-            printf("%d",j);
+            if(i==j||j==1||i==n)
+            {
+            printf("*");
+            }
+            else printf(" ");
         }
         printf("
 ");
