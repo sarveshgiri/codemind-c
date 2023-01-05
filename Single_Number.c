@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,c,j;
+    int n,i,j,c;
     scanf("%d",&n);
     int x[n];
     for(i=0;i<n;i++)
@@ -15,10 +15,10 @@ int main()
         {
             if(i!=j)
             {
-                if(x[i]==x[j]) c++;
+                if(x[i]==x[j])
+                c++;
             }
         }
-        if(c==0) printf("%d",x[i]);
+        if(c==0) printf("%d ",x[i]);
     }
-
 }
