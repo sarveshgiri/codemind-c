@@ -1,15 +1,13 @@
 #include<stdio.h>
-int main()
-{
-    int n,s,d=0,r;
+int main(){
+    int n,s,r,t=0;
     scanf("%d",&n);
     s=n*n;
-    while(s!=0)
-    {
+    while(s!=0){
         r=s%10;
-        d=d+r;
+        t=t+r;
         s=s/10;
     }
-    if(d==n) printf("Neon Number");
+    if(t==n) printf("Neon Number");
     else printf("Not Neon Number");
 }
