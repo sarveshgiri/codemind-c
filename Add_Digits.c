@@ -1,13 +1,11 @@
 #include<stdio.h>
-int main()
-{
-    int n,r,m;
+int main(){
+    int n,r;
     scanf("%d",&n);
-    while(n>9)
-    {
+    while(n>9){
         r=n%10;
         n=n/10;
-        n=r+n;
+        n=n+r;
     }
     printf("%d",n);
 }
