@@ -1,15 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int n,fact=0;
+    int n,i,s=0;
     scanf("%d",&n);
-    for(int i=1;i<n;i++)
+    for(i=1;i<n;i++)
     {
         if(n%i==0)
         {
-            fact=fact+i;
+            s=s+i;
         }
     }
-    if(fact>n) printf("True");
+    if(s>n) printf("True");
     else printf("False");
 }
