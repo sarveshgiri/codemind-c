@@ -1,7 +1,8 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+
+int main() 
 {
-    int a,b,i,c=0,j;
+    int i,j,a,b,c=0,n;
     scanf("%d%d",&a,&b);
     for(i=a;i<=b;i++)
     {
@@ -12,9 +13,12 @@ int main()
             {
                 c++;
             }
-        }
-       if(c==2) printf("%d
+        }   
+    if(c==2)
+    {
+        printf("%d
 ",i);
     }
- 
+       }
+   
 }
